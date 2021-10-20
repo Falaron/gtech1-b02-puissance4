@@ -1,13 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
-#include <string.h>
-#include <ctype.h>
-#define gridX 6
-#define gridY 7
-
-char gameGrid[gridX][gridY];
-char tokens[] = "ox";
+#include "Headers/Winner.h"
+#include "Headers/glob.h"
 
 void repeatStr(char str[], int count) {
     for (int i = 0; i < count; i++) {
@@ -110,6 +102,7 @@ int main(void){
                 break;
             }
         }
+        Winner();
         printf("\033[0;34m\n\n█▄░█ █▀▀ ▀▄▀ ▀█▀   █▀█ █▀█ █░█ █▄░█ █▀▄\n█░▀█ ██▄ █░█ ░█░   █▀▄ █▄█ █▄█ █░▀█ █▄▀\033[0;37m\n\n");
         emplacementLeft -= 1;
         currentPlayerPlaying = currentPlayerPlaying ^ 1;
