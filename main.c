@@ -2,6 +2,8 @@
 #include "Headers/glob.h"
 char tokens[] = "ox";
 
+char tokens[] = "ox";
+
 void repeatStr(char str[], int count) {
     for (int i = 0; i < count; i++) {
         printf("%s", str);
