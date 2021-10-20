@@ -1,5 +1,6 @@
 #include "Headers/Winner.h"
 #include "Headers/glob.h"
+char tokens[] = "ox";
 
 void repeatStr(char str[], int count) {
     for (int i = 0; i < count; i++) {
@@ -21,7 +22,7 @@ void printGrid() {
     repeatStr("__", gridY);
 }
 
-int placeSymbol(x,symbol) {
+int placeSymbol(int x,char symbol) {
     if (x > gridX){
         return 2; // out of range
     }else if(gameGrid[0][x] != '.'){
