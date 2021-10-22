@@ -4,5 +4,3 @@
 #include <string.h>
 #define gridY 7
 #define gridX 6
-
-char gameGrid[gridX][gridY];
